@@ -2,97 +2,97 @@ local graphics = "__gear-girl__/graphics/"
 
 --Character animations
 ---@type table<string,table<string,data.RotatedAnimation>>
-local geargirl_character_animations = {
+geargirl_character_animations = {
   level1 = {
     dead = {
       filename = graphics .. "hr-level1_dead.png",
-      width = 190,
-      height = 188,
+      width = 114,
+      height = 112,
       shift = util.by_pixel(-7.0, -5.5),
       frame_count = 2,
-      scale = 0.25
+      scale = 0.5
     },
     dead_mask = {
       filename = graphics .. "hr-level1_dead_mask.png",
-      width = 190,
-      height = 188,
+      width = 114,
+      height = 112,
       shift = util.by_pixel(-7.0, -5.5),
       frame_count = 2,
       apply_runtime_tint = true,
-      scale = 0.25
+      scale = 0.5
     },
     dead_shadow = {
       filename = graphics .. "hr-level1_dead_shadow.png",
-      width = 190,
-      height = 167,
-      shift = util.by_pixel(-6.5, 2.875),
+      width = 114,
+      height = 112,
+      shift = util.by_pixel(-7.0, -5.5),
       frame_count = 2,
       draw_as_shadow = true,
-      scale = 0.25
+      scale = 0.5
     },
     idle = {
       filename = graphics .. "hr-level1_idle.png",
-      width = 103,
-      height = 213,
+      width = 92,
+      height = 116,
       shift = util.by_pixel(0.0, -21.0),
       frame_count = 22,
       direction_count = 8,
       animation_speed = 0.15,
-      scale = 0.25
+      scale = 0.5
     },
     idle_mask = {
       filename = graphics .. "hr-level1_idle_mask.png",
-      width = 102,
-      height = 205,
-      shift = util.by_pixel(0.125, -20.25),
+      width = 92,
+      height = 116,
+      shift = util.by_pixel(0.0, -21.0),
       frame_count = 22,
       direction_count = 8,
       animation_speed = 0.15,
       apply_runtime_tint = true,
-      scale = 0.25
+      scale = 0.5
     },
     idle_shadow = {
       filename = graphics .. "hr-level1_idle_shadow.png",
-      width = 116,
-      height = 74,
-      shift = util.by_pixel(3.5, -3.0),
+      width = 92,
+      height = 116,
+      shift = util.by_pixel(0.0, -21.0),
       frame_count = 22,
       direction_count = 8,
       animation_speed = 0.15,
       draw_as_shadow = true,
-      scale = 0.25
+      scale = 0.5
     },
     idle_gun = {
       filename = graphics .. "hr-level1_idle_gun.png",
-      width = 210,
-      height = 247,
+      width = 110,
+      height = 128,
       shift = util.by_pixel(0.0, -22.0),
       frame_count = 22,
       direction_count = 8,
       animation_speed = 0.15,
-      scale = 0.225
+      scale = 0.45
     },
     idle_gun_mask = {
       filename = graphics .. "hr-level1_idle_gun_mask.png",
-      width = 210,
-      height = 247,
+      width = 110,
+      height = 128,
       shift = util.by_pixel(0.0, -22.0),
       frame_count = 22,
       direction_count = 8,
       animation_speed = 0.15,
       apply_runtime_tint = true,
-      scale = 0.225
+      scale = 0.45
     },
     idle_gun_shadow = {
       filename = graphics .. "hr-level1_idle_gun_shadow.png",
-      width = 208,
-      height = 138,
-      shift = util.by_pixel(1.5, -8.375),
+      width = 110,
+      height = 128,
+      shift = util.by_pixel(0.0, -22.0),
       frame_count = 22,
       direction_count = 8,
       animation_speed = 0.15,
       draw_as_shadow = true,
-      scale = 0.225
+      scale = 0.45
     },
     mining_tool = {
       stripes = {
@@ -107,35 +107,24 @@ local geargirl_character_animations = {
           height_in_frames = 8
         }
       },
-      width = 316,
-      height = 312,
+      width = 196,
+      height = 194,
       shift = util.by_pixel(0.0, -15.0),
       frame_count = 26,
       direction_count = 8,
       animation_speed = 0.9,
-      scale = 0.2
+      scale = 0.4
     },
     mining_tool_mask = {
-      stripes = {
-        {
-          filename = graphics .. "hr-level1_mining_tool_mask-1.png",
-          width_in_frames = 13,
-          height_in_frames = 8
-        },
-        {
-          filename = graphics .. "hr-level1_mining_tool_mask-2.png",
-          width_in_frames = 13,
-          height_in_frames = 8
-        }
-      },
-      width = 316,
-      height = 312,
+      filename = graphics .. "hr-level1_mining_tool_mask.png",
+      width = 196,
+      height = 194,
       shift = util.by_pixel(0.0, -15.0),
       frame_count = 26,
       direction_count = 8,
       animation_speed = 0.9,
       apply_runtime_tint = true,
-      scale = 0.2
+      scale = 0.4
     },
     mining_tool_shadow = {
       stripes = {
@@ -150,349 +139,327 @@ local geargirl_character_animations = {
           height_in_frames = 8
         }
       },
-      width = 334,
-      height = 225,
-      shift = util.by_pixel(7.25, 7.375),
+      width = 196,
+      height = 194,
+      shift = util.by_pixel(0.0, -15.0),
       frame_count = 26,
       direction_count = 8,
       animation_speed = 0.9,
       draw_as_shadow = true,
-      scale = 0.2
+      scale = 0.4
     },
     running = {
       filename = graphics .. "hr-level1_running.png",
-      width = 176,
-      height = 234,
+      width = 88,
+      height = 132,
       shift = util.by_pixel(0.0, -18.0),
       frame_count = 22,
       direction_count = 8,
       animation_speed = 0.6,
-      scale = 0.25
+      scale = 0.5
     },
     running_mask = {
       filename = graphics .. "hr-level1_running_mask.png",
-      width = 175,
-      height = 232,
-      shift = util.by_pixel(0.125, -17.5),
+      width = 88,
+      height = 132,
+      shift = util.by_pixel(0.0, -18.0),
       frame_count = 22,
       direction_count = 8,
       animation_speed = 0.6,
       apply_runtime_tint = true,
-      scale = 0.25
+      scale = 0.5
     },
     running_shadow = {
       filename = graphics .. "hr-level1_running_shadow.png",
-      width = 176,
-      height = 124,
-      shift = util.by_pixel(0.0, -3.25),
+      width = 88,
+      height = 132,
+      shift = util.by_pixel(0.0, -18.0),
       frame_count = 22,
       direction_count = 8,
       animation_speed = 0.6,
       draw_as_shadow = true,
-      scale = 0.25
+      scale = 0.5
     },
     running_gun = {
       filename = graphics .. "hr-level1_running_gun.png",
-      width = 200,
-      height = 261,
+      width = 108,
+      height = 136,
       shift = util.by_pixel(2.5, -19.5),
       frame_count = 22,
       direction_count = 18,
       animation_speed = 0.6,
-      scale = 0.25
+      scale = 0.5
     },
     running_gun_mask = {
       filename = graphics .. "hr-level1_running_gun_mask.png",
-      width = 197,
-      height = 232,
-      shift = util.by_pixel(2.125, -22.375),
+      width = 108,
+      height = 136,
+      shift = util.by_pixel(2.5, -19.5),
       frame_count = 22,
       direction_count = 18,
       animation_speed = 0.6,
       apply_runtime_tint = true,
-      scale = 0.25
+      scale = 0.5
     },
     running_gun_shadow = {
       filename = graphics .. "hr-level1_running_gun_shadow.png",
-      width = 202,
-      height = 182,
-      shift = util.by_pixel(3.75, -12.375),
+      width = 108,
+      height = 136,
+      shift = util.by_pixel(2.5, -19.5),
       frame_count = 22,
       direction_count = 18,
       animation_speed = 0.6,
       draw_as_shadow = true,
-      scale = 0.25
-    },
+      scale = 0.5
+    }
   },
   level2addon = {
     dead = {
       filename = graphics .. "hr-level2addon_dead.png",
-      width = 190,
-      height = 188,
+      width = 114,
+      height = 112,
       shift = util.by_pixel(-7.0, -5.5),
       frame_count = 2,
-      scale = 0.25
+      scale = 0.5
     },
     dead_mask = {
       filename = graphics .. "hr-level2addon_dead_mask.png",
-      width = 190,
-      height = 188,
+      width = 114,
+      height = 112,
       shift = util.by_pixel(-7.0, -5.5),
       frame_count = 2,
       apply_runtime_tint = true,
-      scale = 0.25
+      scale = 0.5
     },
     idle = {
       filename = graphics .. "hr-level2addon_idle.png",
-      width = 101,
-      height = 212,
+      width = 92,
+      height = 116,
       shift = util.by_pixel(0.0, -21.0),
       frame_count = 22,
       direction_count = 8,
       animation_speed = 0.15,
-      scale = 0.25
+      scale = 0.5
     },
     idle_mask = {
       filename = graphics .. "hr-level2addon_idle_mask.png",
-      width = 100,
-      height = 205,
-      shift = util.by_pixel(0.125, -20.125),
+      width = 92,
+      height = 116,
+      shift = util.by_pixel(0.0, -21.0),
       frame_count = 22,
       direction_count = 8,
       animation_speed = 0.15,
       apply_runtime_tint = true,
-      scale = 0.25
+      scale = 0.5
     },
     idle_gun = {
       filename = graphics .. "hr-level2addon_idle_gun.png",
-      width = 210,
-      height = 247,
+      width = 110,
+      height = 128,
       shift = util.by_pixel(0.0, -22.0),
       frame_count = 22,
       direction_count = 8,
       animation_speed = 0.15,
-      scale = 0.225
+      scale = 0.45
     },
     idle_gun_mask = {
       filename = graphics .. "hr-level2addon_idle_gun_mask.png",
-      width = 202,
-      height = 244,
-      shift = util.by_pixel(4.5, -19.125),
+      width = 110,
+      height = 128,
+      shift = util.by_pixel(0.0, -22.0),
       frame_count = 22,
       direction_count = 8,
       animation_speed = 0.15,
       apply_runtime_tint = true,
-      scale = 0.225
+      scale = 0.45
     },
     mining_tool = {
-      stripes = {
-        {
-          filename = graphics .. "hr-level2addon_mining_tool-1.png",
-          width_in_frames = 13,
-          height_in_frames = 8
-        },
-        {
-          filename = graphics .. "hr-level2addon_mining_tool-2.png",
-          width_in_frames = 13,
-          height_in_frames = 8
-        }
-      },
-      width = 316,
-      height = 312,
+      filename = graphics .. "hr-level2addon_mining_tool.png",
+      width = 196,
+      height = 194,
       shift = util.by_pixel(0.0, -15.0),
       frame_count = 26,
       direction_count = 8,
       animation_speed = 0.9,
-      scale = 0.2
+      scale = 0.4
     },
     mining_tool_mask = {
       filename = graphics .. "hr-level2addon_mining_tool_mask.png",
-      width = 172,
-      height = 259,
-      shift = util.by_pixel(0.0, -9.625),
+      width = 196,
+      height = 194,
+      shift = util.by_pixel(0.0, -15.0),
       frame_count = 26,
       direction_count = 8,
       animation_speed = 0.9,
       apply_runtime_tint = true,
-      scale = 0.2
+      scale = 0.4
     },
     running = {
       filename = graphics .. "hr-level2addon_running.png",
-      width = 176,
-      height = 235,
+      width = 88,
+      height = 132,
       shift = util.by_pixel(0.0, -18.0),
       frame_count = 22,
       direction_count = 8,
       animation_speed = 0.6,
-      scale = 0.25
+      scale = 0.5
     },
     running_mask = {
       filename = graphics .. "hr-level2addon_running_mask.png",
-      width = 175,
-      height = 232,
-      shift = util.by_pixel(0.125, -17.625),
+      width = 88,
+      height = 132,
+      shift = util.by_pixel(0.0, -18.0),
       frame_count = 22,
       direction_count = 8,
       animation_speed = 0.6,
       apply_runtime_tint = true,
-      scale = 0.25
+      scale = 0.5
     },
     running_gun = {
       filename = graphics .. "hr-level2addon_running_gun.png",
-      width = 200,
-      height = 235,
+      width = 108,
+      height = 136,
       shift = util.by_pixel(2.5, -19.5),
       frame_count = 22,
       direction_count = 18,
       animation_speed = 0.6,
-      scale = 0.25
+      scale = 0.5
     },
     running_gun_mask = {
       filename = graphics .. "hr-level2addon_running_gun_mask.png",
-      width = 197,
-      height = 232,
-      shift = util.by_pixel(2.125, -19.125),
+      width = 108,
+      height = 136,
+      shift = util.by_pixel(2.5, -19.5),
       frame_count = 22,
       direction_count = 18,
       animation_speed = 0.6,
       apply_runtime_tint = true,
-      scale = 0.25
-    },
+      scale = 0.5
+    }
   },
   level3addon = {
     dead = {
       filename = graphics .. "hr-level3addon_dead.png",
-      width = 191,
-      height = 189,
+      width = 114,
+      height = 112,
       shift = util.by_pixel(-7.0, -5.5),
       frame_count = 2,
-      scale = 0.25
+      scale = 0.5
     },
     dead_mask = {
       filename = graphics .. "hr-level3addon_dead_mask.png",
-      width = 191,
-      height = 189,
+      width = 114,
+      height = 112,
       shift = util.by_pixel(-7.0, -5.5),
       frame_count = 2,
       apply_runtime_tint = true,
-      scale = 0.25
+      scale = 0.5
     },
     idle = {
       filename = graphics .. "hr-level3addon_idle.png",
-      width = 101,
-      height = 213,
+      width = 92,
+      height = 116,
       shift = util.by_pixel(0.0, -21.0),
       frame_count = 22,
       direction_count = 8,
       animation_speed = 0.15,
-      scale = 0.25
+      scale = 0.5
     },
     idle_mask = {
       filename = graphics .. "hr-level3addon_idle_mask.png",
-      width = 100,
-      height = 206,
-      shift = util.by_pixel(0.125, -20.125),
+      width = 92,
+      height = 116,
+      shift = util.by_pixel(0.0, -21.0),
       frame_count = 22,
       direction_count = 8,
       animation_speed = 0.15,
       apply_runtime_tint = true,
-      scale = 0.25
+      scale = 0.5
     },
     idle_gun = {
       filename = graphics .. "hr-level3addon_idle_gun.png",
-      width = 210,
-      height = 256,
+      width = 110,
+      height = 128,
       shift = util.by_pixel(0.0, -22.0),
       frame_count = 22,
       direction_count = 8,
       animation_speed = 0.15,
-      scale = 0.225
+      scale = 0.45
     },
     idle_gun_mask = {
       filename = graphics .. "hr-level3addon_idle_gun_mask.png",
-      width = 202,
-      height = 256,
+      width = 110,
+      height = 128,
       shift = util.by_pixel(0.0, -22.0),
       frame_count = 22,
       direction_count = 8,
       animation_speed = 0.15,
       apply_runtime_tint = true,
-      scale = 0.225
+      scale = 0.45
     },
     mining_tool = {
-      stripes = {
-        {
-          filename = graphics .. "hr-level3addon_mining_tool-1.png",
-          width_in_frames = 13,
-          height_in_frames = 8
-        },
-        {
-          filename = graphics .. "hr-level3addon_mining_tool-2.png",
-          width_in_frames = 13,
-          height_in_frames = 8
-        }
-      },
-      width = 316,
-      height = 312,
+      filename = graphics .. "hr-level3addon_mining_tool.png",
+      width = 196,
+      height = 194,
       shift = util.by_pixel(0.0, -15.0),
       frame_count = 26,
       direction_count = 8,
       animation_speed = 0.9,
-      scale = 0.2
+      scale = 0.4
     },
     mining_tool_mask = {
       filename = graphics .. "hr-level3addon_mining_tool_mask.png",
-      width = 194,
-      height = 260,
-      shift = util.by_pixel(0.0, -9.5),
+      width = 196,
+      height = 194,
+      shift = util.by_pixel(0.0, -15.0),
       frame_count = 26,
       direction_count = 8,
       animation_speed = 0.9,
       apply_runtime_tint = true,
-      scale = 0.2
+      scale = 0.4
     },
     running = {
       filename = graphics .. "hr-level3addon_running.png",
-      width = 176,
-      height = 235,
+      width = 88,
+      height = 132,
       shift = util.by_pixel(0.0, -18.0),
       frame_count = 22,
       direction_count = 8,
       animation_speed = 0.6,
-      scale = 0.25
+      scale = 0.5
     },
     running_mask = {
       filename = graphics .. "hr-level3addon_running_mask.png",
-      width = 176,
-      height = 233,
-      shift = util.by_pixel(0.0, -17.5),
+      width = 88,
+      height = 132,
+      shift = util.by_pixel(0.0, -18.0),
       frame_count = 22,
       direction_count = 8,
       animation_speed = 0.6,
       apply_runtime_tint = true,
-      scale = 0.25
+      scale = 0.5
     },
     running_gun = {
       filename = graphics .. "hr-level3addon_running_gun.png",
-      width = 201,
-      height = 236,
+      width = 108,
+      height = 136,
       shift = util.by_pixel(2.5, -19.5),
       frame_count = 22,
       direction_count = 18,
       animation_speed = 0.6,
-      scale = 0.25
+      scale = 0.5
     },
     running_gun_mask = {
       filename = graphics .. "hr-level3addon_running_gun_mask.png",
-      width = 198,
-      height = 233,
-      shift = util.by_pixel(2.125, -19.125),
+      width = 108,
+      height = 136,
+      shift = util.by_pixel(2.5, -19.5),
       frame_count = 22,
       direction_count = 18,
       animation_speed = 0.6,
       apply_runtime_tint = true,
-      scale = 0.25
-    },
+      scale = 0.5
+    }
   }
 }
 

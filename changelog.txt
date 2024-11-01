@@ -1,4 +1,10 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.1.1
+Date: 1-11-2024
+  Features:
+    - Replace graphics with normal high resolution images, significantly improving loading time & reducing memory usage (oops).
+
+---------------------------------------------------------------------------------------------------
 Version: 1.1.0
 Date: 31-10-2024
   Features:

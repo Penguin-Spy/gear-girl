@@ -2,7 +2,7 @@ local animations = require "girl-character-animations"
 
 if skins_factored.schema_version == 2 then
   skins_factored.create_skin("gear-girl", {
-    icon = "__gear-girl__/graphics/character-icon.png",
+    icon = "__gear-girl__/graphics/character.png",
     armor_animations = animations.armor_animations,
     corpse_animation = animations.corpse_pictures
   })
