@@ -1,0 +1,11 @@
+{
+  "name": "gear-girl",
+  "version": "1.1.0",
+  "title": "Gear Girl 2.0",
+  "description": "This mod replaces your character with a female version of the engineer, Gear Girl! Original by SleepyEngi, updated for Factorio 2.0.",
+  "author": "Penguin_Spy",
+  "factorio_version": "2.0",
+  "dependencies": [
+    "skins-factored >= 1.2.1"
+  ]
+}
